@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 import enums.MenuItem;
 
@@ -24,7 +25,8 @@ public class MenuItemController extends AbstractAction {
 	public void actionPerformed(ActionEvent evt) {
 
 		frame.getContentPane().removeAll();
-		item.generatePanel(frame);
-
+		JPanel jpanel = item.getJPanel(frame);
+		frame.getContentPane().add(jpanel);
+		frame.pack();
 	}
 }
