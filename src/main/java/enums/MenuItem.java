@@ -1,49 +1,43 @@
 package enums;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public enum MenuItem {
 
 	INICIO("Inicio") {
 		@Override
-		public void generatePanel(JFrame frame) {
+		public JPanel getJPanel(JFrame frame) {
 			// TODO Auto-generated method stub
-
-		}
-	},
-	GENERADOR("Generador Plantilla") {
-		@Override
-		public void generatePanel(JFrame frame) {
-			// TODO Auto-generated method stub
-
-		}
-	},
-	CONFIGURACIÓN("Configuración") {
-		@Override
-		public void generatePanel(JFrame frame) {
-			// TODO Auto-generated method stub
-
+			return null;
 		}
 	},
 	SALIR("Salir") {
 		@Override
-		public void generatePanel(JFrame frame) {
+		public JPanel getJPanel(JFrame frame) {
 			// TODO Auto-generated method stub
-
+			return null;
 		}
 	},
 	VERSION("version") {
 		@Override
-		public void generatePanel(JFrame frame) {
+		public JPanel getJPanel(JFrame frame) {
 			// TODO Auto-generated method stub
-
+			return null;
 		}
 	},
-	CONF_GENERADOR("Configuración Generador") {
+	GEN_PLANTILLA_DESPACHO("Plantilla Despacho") {
 		@Override
-		public void generatePanel(JFrame frame) {
+		public JPanel getJPanel(JFrame frame) {
 			// TODO Auto-generated method stub
-
+			return null;
+		}
+	},
+	CONF_PLANTILLA_DESPACHO("Plantilla Despacho") {
+		@Override
+		public JPanel getJPanel(JFrame frame) {
+			// TODO Auto-generated method stub
+			return null;
 		}
 	};
 
@@ -53,6 +47,6 @@ public enum MenuItem {
 		this.name = name;
 	}
 
-	public abstract void generatePanel(JFrame frame);
+	public abstract JPanel getJPanel(JFrame frame);
 
 }
