@@ -4,5 +4,5 @@
   <artifactId>generador-plantillas</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>generador-plantillas</name>
-  <description>Generador de plantillas basadas en un archivo de origen</description>
+  <description>Generador de plantillas basados en un archivo origen</description>
 </project>
