@@ -1,4 +1,4 @@
-package views;
+package controllers;
 
 import java.awt.event.ActionEvent;
 
@@ -7,6 +7,7 @@ import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileSystemView;
 
 import models.enums.TypeFile;
+import views.UploadFile;
 
 public class UploadFileController extends AbstractAction {
 

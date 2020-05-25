@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 
+import controllers.UploadFileController;
 import models.enums.TypeFile;
 
 public class UploadFile extends JPanel {
